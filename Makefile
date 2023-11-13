@@ -1,7 +1,5 @@
-ifeq ($(CONFIG_KPROBES),y)
-ifeq ($(CONFIG_HAVE_KPROBES),y)
+ifeq ($(CONFIG_KSU_STATIC_HOOKS),y)
 obj-y += kernel/
-endif
 endif
 
 ccflags-y := -Wno-unused-function
